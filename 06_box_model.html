@@ -5,7 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Box Model / Margin & Padding</title>
   <style>
-    
+    /* CSS reset */
+    * {
+      margin: 0;
+      padding: 0;
+
+      /* padding included in 500px*/
+      box-sizing: border-box; 
+    }
+
+
+    .box {
+      background: #f4f4f4;
+      border: 10px #777 solid;
+      width: 500px;
+
+      /* Padding on all sides */
+      padding: 20px;
+
+      /* The style below will override the one above*/
+      /* Padding per side */
+      padding-top: 10px;
+      padding-right: 30px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+
+      /* Padding shorthand = top right bottom left -> clockwise*/
+      padding: 10px 30px 10px 30px;
+      /* Padding shorthand = top/bottom left/right */
+      padding: 10px 30px;
+
+
+      /* Margin on all sides */
+      margin: 20px;
+      /* The style below will override the one above*/
+      /* Margin per side */
+      margin-top: 10px;
+      margin-right: 30px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      /* Margin shorthand = top right bottom left -> clockwise*/
+      margin: 10px 30px 10px 30px;
+      /* Margin shorthand = top/bottom left/right */
+      margin: 10px 30px;
+    }
+
+    .box h3{
+      padding-bottom: 10px;
+    }
+
   </style>
 </head>
 <body>
