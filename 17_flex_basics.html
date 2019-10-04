@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex Basics</title>
+  <style>
+    #container {
+      /* flex: it will float all children -> put in a row, it doesn't care display block*/
+      display: flex;
+
+      /*flex-direction: column;*/
+
+      /* flex-direction: row is default, can do row-reverse */
+      /*
+      flex-direction: row;
+      flex-wrap: wrap;
+      */
+      flex-flow: row wrap;
+    }
+
+    .item{
+      background: #f4f4f4;
+      border: 1px #ccc solid ;
+      padding: 1rem;
+      text-align: center;
+      margin: 0.75rem;
+      /* make all children equal & responsive */
+      flex: 1;
+    }
+
+    .item:first-child {
+      flex: 2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+</body>
+</html>
