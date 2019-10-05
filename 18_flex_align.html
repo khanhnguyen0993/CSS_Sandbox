@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flex Align</title>
+  <style>
+    #container {
+      background: #555;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      /* Align items horizontal */
+      justify-content: space-evenly;
+      /*
+        OPTIONS:;
+          flex-start    -> left;
+          flex-end      -> right;
+          center        -> center;
+          space-around  -> space around (including edge)
+          space-between -> space around (not include edge)
+          space-evenly  -> space around evenly
+      */
+      
+      /* Align items vertical (MUST BE HEIGHT) */
+      align-items: center;
+      /*
+        OPTIONS:
+          flex-start
+          flex-end
+          center
+          stretch (default): stretch all the way down
+      */
+  
+
+      /* Align items vertical where extra space*/
+      align-content: space-between;
+      /*
+        OPTIONS:
+          flex-start, flex-end, center, space-between, space-around, stretch;
+      */
+    }
+
+
+
+    .item {
+      background: #f4f4f4;
+      border: 1px #ccc solid;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+
+      flex-basis: 200px;
+    }
+
+    .item-4 {
+      /* Align single item vertical */
+      align-self: flex-end;
+      order: 3;
+    }
+
+    .item-3 {
+      order: 4;
+    }
+  </style>
+</head>
+<body>
+  <!-- .item.item-${<h3>Item $</h3>}*3 -->
+  <div id="container">
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-4">
+      <h3>Item 4</h3>
+    </div>
+<!--     <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div> -->
+
+  </div>
+</body>
+</html>
